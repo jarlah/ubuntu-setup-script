@@ -23,6 +23,11 @@ echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.li
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
 sudo apt update
 sudo apt -y install sbt
+curl -O https://prerelease.keybase.io/keybase_amd64.deb
+sudo dpkg -i keybase_amd64.deb
+sudo apt install -f
+wget https://raw.githubusercontent.com/foundweekends/conscript/master/setup.sh -O - | sh
+cs n8han/giter8
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt update -y
 sudo apt install -y oracle-java8-installer
