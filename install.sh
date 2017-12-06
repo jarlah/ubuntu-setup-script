@@ -15,7 +15,10 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | b
 sudo sh -c 'echo "deb https://atlassian.artifactoryonline.com/atlassian/hipchat-apt-client $(lsb_release -c -s) main" > /etc/apt/sources.list.d/atlassian-hipchat4.list'
 wget -O - https://atlassian.artifactoryonline.com/atlassian/api/gpg/key/public | sudo apt-key add -
 sudo apt update
-sudo apt -y install hipchat4 
+sudo apt -y install hipchat4
+sudo add-apt-repository -y ppa:flexiondotorg/yadm
+sudo apt update
+sudo apt -y install yadm
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt update -y
 sudo apt install -y oracle-java8-installer
