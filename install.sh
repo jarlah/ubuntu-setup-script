@@ -19,6 +19,10 @@ sudo apt -y install hipchat4
 sudo add-apt-repository -y ppa:flexiondotorg/yadm
 sudo apt update
 sudo apt -y install yadm
+echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
+sudo apt update
+sudo apt -y install sbt
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt update -y
 sudo apt install -y oracle-java8-installer
