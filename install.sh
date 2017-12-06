@@ -25,7 +25,7 @@ sudo apt update
 sudo apt -y install sbt
 curl -O https://prerelease.keybase.io/keybase_amd64.deb
 sudo dpkg -i keybase_amd64.deb
-sudo apt install -f
+sudo apt install -yf
 wget https://raw.githubusercontent.com/foundweekends/conscript/master/setup.sh -O - | sh
 cs n8han/giter8
 sudo add-apt-repository -y ppa:webupd8team/java
