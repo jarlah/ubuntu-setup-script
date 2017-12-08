@@ -30,5 +30,5 @@ wget https://raw.githubusercontent.com/foundweekends/conscript/master/setup.sh -
 cs n8han/giter8
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt update -y
-sudo apt install -y oracle-java8-installer
+sudo apt install -y oracle-java8-installer maven
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
